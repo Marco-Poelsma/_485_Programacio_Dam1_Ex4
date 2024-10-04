@@ -12,7 +12,9 @@ public class Main {
             if (!scan.hasNextInt() || nNois < 0) {
                 System.out.println("Introdueix un nombre enter positiu.");
                 valid = false;
-
+            }
+            else{
+                valid=true;
             }
         } while (!valid);
         System.out.println("Introdueix el nombre de noies a la classe.");
@@ -21,7 +23,9 @@ public class Main {
             if (!scan.hasNextInt() || nNoies < 0) {
                 System.out.println("Introdueix un nombre enter positiu.");
                 valid = false;
-
+            }
+            else{
+                valid=true;
             }
         } while (!valid);
         double nTotal =  nNois+nNoies;
