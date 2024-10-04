@@ -5,8 +5,8 @@ public class Main {
         Scanner scan = new Scanner (System.in);
         System.out.println("Bon dia! Introdueix el nombre de nois a la classe.");
         boolean valid = true;
-        double nNois;
-        double nNoies;
+        int nNois;
+        int nNoies;
         do {
             if (!scan.hasNextInt() || nNois < 0) {
                 System.out.println("Introdueix un nombre enter positiu.");
