@@ -8,7 +8,6 @@ public class Main {
         double nNois;
         double nNoies;
         do {
-            nNois = scan.nextInt();
             if (!scan.hasNextInt() || nNois < 0) {
                 System.out.println("Introdueix un nombre enter positiu.");
                 valid = false;
@@ -16,10 +15,10 @@ public class Main {
             else{
                 valid=true;
             }
+            nNois = scan.nextInt();
         } while (!valid);
         System.out.println("Introdueix el nombre de noies a la classe.");
         do {
-            nNoies = scan.nextInt();
             if (!scan.hasNextInt() || nNoies < 0) {
                 System.out.println("Introdueix un nombre enter positiu.");
                 valid = false;
@@ -27,6 +26,7 @@ public class Main {
             else{
                 valid=true;
             }
+            nNoies = scan.nextInt();
         } while (!valid);
         double nTotal =  nNois+nNoies;
         double percentNois = nNois/nTotal;
